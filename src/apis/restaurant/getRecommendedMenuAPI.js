@@ -2,7 +2,7 @@ import { api } from "../API";
 
 export const getRecommendedMenuAPI = async (restaurantIdx, emotion) => {
     try {
-        const response = await api.get(`http://172.20.0.4:8090/restaurants/${restaurantIdx}/recommend`, {
+        const response = await api.get(`http://feelmeal-backend:8090/restaurants/${restaurantIdx}/recommend`, {
             params: {
                 emotion
             }

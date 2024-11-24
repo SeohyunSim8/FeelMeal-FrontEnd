@@ -2,7 +2,7 @@ import { api } from "../API";
 
 export const getRestaurantListAPI = async (memberIdx, foodCategory) => {
     try {
-        const response = await api.get('http://172.20.0.4:8090/restaurants/list', {
+        const response = await api.get('http://feelmeal-backend:8090/restaurants/list', {
             params: {
                 memberIdx,
                 foodCategory

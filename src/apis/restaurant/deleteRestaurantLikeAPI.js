@@ -2,7 +2,7 @@ import { api } from "../API";
 
 export const deleteRestaurantLikeAPI = async (memberIdx, restaurantIdx) => {
     try {
-        const response = await api.delete('http://172.20.0.4:8090/restaurants/like', {
+        const response = await api.delete('http://feelmeal-backend:8090/restaurants/like', {
             data: {
                 memberIdx,
                 restaurantIdx,

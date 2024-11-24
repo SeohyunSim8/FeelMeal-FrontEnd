@@ -2,7 +2,7 @@ import { api } from "../API";
 
 export const patchAddressAPI = async (idx, address) => {
     try {
-        const response = await api.patch('http://172.20.0.4:8090/member/address', {
+        const response = await api.patch('http://feelmeal-backend:8090/member/address', {
             idx,
             address
         });

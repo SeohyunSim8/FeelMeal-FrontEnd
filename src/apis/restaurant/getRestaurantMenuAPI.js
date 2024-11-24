@@ -2,7 +2,7 @@ import { api } from "../API";
 
 export const getRestaurantMenuAPI = async (restaurantIdx) => {
     try {
-        const response = await api.get(`http://172.20.0.4:8090/restaurants/${restaurantIdx}/menus`);
+        const response = await api.get(`http://feelmeal-backend:8090/restaurants/${restaurantIdx}/menus`);
         console.log('전체 응답 :', response);
         return response.data;
 

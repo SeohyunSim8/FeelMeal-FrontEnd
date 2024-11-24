@@ -2,7 +2,7 @@ import { api } from "../API";
 
 export const getRestaurantLikedListAPI = async (memberIdx) => {
     try {
-        const response = await api.get('http://172.20.0.4:8090/member/liked-list', {
+        const response = await api.get('http://feelmeal-backend:8090/member/liked-list', {
             params: {
                 memberIdx
             }

@@ -2,7 +2,7 @@ import { api } from "../API";
 
 export const postSignupAPI = async (id, password, name, address) => {
     try {
-        const response = await api.post('http://172.20.0.4:8090/member/sign-up', {
+        const response = await api.post('http://feelmeal-backend:8090/member/sign-up', {
             id,
             password,
             name,
